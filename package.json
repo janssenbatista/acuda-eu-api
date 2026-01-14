@@ -1,0 +1,25 @@
+{
+  "name": "acuda-eu-api",
+  "version": "1.0.0",
+  "description": "API para a aplicação AcudaEU",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "start": "tsx index.ts",
+    "test": "test"
+  },
+  "author": "Janssen Batista (batistajanssen.dev@gmail.com)",
+  "dependencies": {
+    "@google/genai": "^1.35.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
