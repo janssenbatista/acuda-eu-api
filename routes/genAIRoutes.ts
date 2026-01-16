@@ -16,7 +16,7 @@ router.post("/test", async (req: Request, res: Response) => {
     model: "gemini-2.5-flash",
     contents: `Encontre a profissão mais adequada para a seguinte query: ${query} baseado nas seguitens profissões: ${
       professions ?? ["Encanador", "Pintor", "Eletricista", "Marceneiro"]
-    }. Retorne somente o nome da profissão. Caso nenhuma das profissões seja compatível, retorne ""`,
+    }. Retorne somente o nome da profissão. Caso nenhuma das profissões seja compatível ou a frase não tenha sentido, retorne ""`,
   });
 
   if (response) res.send(response.text);
